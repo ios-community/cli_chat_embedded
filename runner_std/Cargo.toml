@@ -1,0 +1,15 @@
+[package]
+name = "cli_chat_runner_std"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Host simulator runner for cli_chat_core using std I/O."
+publish = false
+
+[dependencies]
+cli_chat_core = { path = "../core" }
+crossterm = "0.29.0"
+
+[lints]
+workspace = true

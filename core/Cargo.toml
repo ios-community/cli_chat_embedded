@@ -1,0 +1,30 @@
+[package]
+name = "cli_chat_core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme.workspace = true
+
+[features]
+default = []
+std = []
+
+[dependencies]
+
+[dev-dependencies]
+proptest = "1.11.0"
+criterion = { version = "0.8.2", default-features = false }
+
+[lints]
+workspace = true
+
+[[bench]]
+name = "performance"
+harness = false
+required-features = ["std"]
