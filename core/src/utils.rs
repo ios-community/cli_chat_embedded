@@ -149,7 +149,7 @@ impl Crc32 {
 /// byte-by-byte to the provided serial port without allocating memory.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::utils::write_u32(&mut port, 42);
 /// ```
 ///

@@ -13,7 +13,7 @@
 /// Implementors must guarantee non-blocking reads and synchronous byte writes.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // Example implementation stub
 /// ```
 ///
@@ -36,7 +36,7 @@ pub trait SerialPort {
     /// Synchronously transmits one byte to the underlying hardware.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // port.write_byte(b'A');
     /// ```
     ///
@@ -60,7 +60,7 @@ pub trait SerialPort {
     /// Non-blocking read. Returns None if the hardware buffer is empty.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // let b = port.read_byte();
     /// ```
     ///

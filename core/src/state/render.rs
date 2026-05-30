@@ -22,7 +22,7 @@ use crate::utils::write_u32;
 /// Iterates over the UTF-8 bytes of the string and transmits them synchronously.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::write_str(&mut port, "Hello");
 /// ```
 ///
@@ -51,7 +51,7 @@ pub fn write_str(port: &mut impl SerialPort, string: &str) {
 /// draws a divider on line 23, and moves the cursor to the input line 24.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::init_viewport(&mut port);
 /// ```
 ///
@@ -90,7 +90,7 @@ pub fn init_viewport(port: &mut impl SerialPort) {
 /// (or Guest), and outputs the current contents of the line editor buffer.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_prompt(&state, &mut port);
 /// ```
 ///
@@ -152,7 +152,7 @@ pub fn render_prompt(state: &AppState, port: &mut impl SerialPort) {
 /// prints the message with a newline to trigger a scroll, and restores the cursor.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_message(&state, &msg, &mut port);
 /// ```
 ///
@@ -214,7 +214,7 @@ pub fn render_message(state: &AppState, message: &Message, port: &mut impl Seria
 /// System messages are displayed in yellow and are not saved to persistent history.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_system_message(&mut port, 1, "Command not found");
 /// ```
 ///
@@ -251,7 +251,7 @@ pub fn render_system_message(port: &mut impl SerialPort, tick: u32, msg: &str) {
 /// Used to provide visual separation between system messages and user messages.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_empty_line(&mut port);
 /// ```
 ///
@@ -280,7 +280,7 @@ pub fn render_empty_line(port: &mut impl SerialPort) {
 /// Prints a formatted ASCII banner introducing the application and its basic usage.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_welcome(&mut port);
 /// ```
 ///
@@ -318,7 +318,7 @@ pub fn render_welcome(port: &mut impl SerialPort) {
 /// Iterates through the user registry and prints the ID and name of each active user.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_active_users(&state, &mut port);
 /// ```
 ///
@@ -382,7 +382,7 @@ pub fn render_active_users(state: &AppState, port: &mut impl SerialPort) {
 /// Prints current uptime ticks and memory usage of the history buffer.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_status(&state, &mut port);
 /// ```
 ///
@@ -435,7 +435,7 @@ pub fn render_status(state: &AppState, port: &mut impl SerialPort) {
 /// Prints the current relative tick and the host boot epoch.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_time_info(&state, &mut port);
 /// ```
 ///
@@ -473,7 +473,7 @@ pub fn render_time_info(state: &AppState, port: &mut impl SerialPort) {
 /// Prints the author and license information.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // crate::state::render::render_about(&state, &mut port);
 /// ```
 ///

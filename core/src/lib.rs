@@ -12,7 +12,7 @@
 //! Intended for static BSS allocation and explicit single-threaded polling.
 //!
 //! # Examples
-//! ```rust,ignore
+//! ```text
 //! // Core library does not run on its own. See runner_std for usage.
 //! ```
 //!

@@ -121,7 +121,7 @@ impl AppState {
     /// On CRC mismatch or read failure, triggers factory reset and emits ANSI warning.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.init(&mut storage, &mut port).unwrap();
     /// ```
     ///
@@ -223,7 +223,7 @@ impl AppState {
     /// Zero-initializes the state and emits an ANSI warning via the serial port.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.factory_reset(&mut port).unwrap();
     /// ```
     ///
@@ -260,7 +260,7 @@ impl AppState {
     /// and writes everything to the provided storage medium.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.flush(&mut storage).unwrap();
     /// ```
     ///
@@ -319,7 +319,7 @@ impl AppState {
     /// Core polling loop entry point for byte-by-byte terminal I/O.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.process_byte(b'h', &mut port, &mut storage).unwrap();
     /// ```
     ///
@@ -397,7 +397,7 @@ impl AppState {
     /// Provides visual feedback via system messages framed by empty lines.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.dispatch_command(&mut port).unwrap();
     /// ```
     ///
@@ -524,7 +524,7 @@ impl AppState {
     /// and renders it to the scrolling viewport.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.dispatch_message(&mut port).unwrap();
     /// ```
     ///
@@ -564,7 +564,7 @@ impl AppState {
     /// after a factory reset to maintain accurate relative time tracking.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // state.set_boot_epoch(1779417956);
     /// ```
     ///

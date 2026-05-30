@@ -13,7 +13,7 @@
 /// Implementations must respect packed alignment guarantees.
 ///
 /// # Examples
-/// ```rust,ignore
+/// ```text
 /// // Example implementation stub
 /// ```
 ///
@@ -36,7 +36,7 @@ pub trait Storage {
     /// Populates the provided buffer with bytes from the storage medium.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // storage.read(0, &mut buf);
     /// ```
     ///
@@ -60,7 +60,7 @@ pub trait Storage {
     /// Commits the provided bytes to the storage medium at the specified offset.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // storage.write(0, &buf);
     /// ```
     ///
@@ -84,7 +84,7 @@ pub trait Storage {
     /// Ensures all previously written data is permanently stored.
     ///
     /// # Examples
-    /// ```rust,ignore
+    /// ```text
     /// // storage.flush();
     /// ```
     ///
